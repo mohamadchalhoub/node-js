@@ -1,0 +1,153 @@
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.footer-info {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info-2 {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info-3 {
+    display: flex;
+    gap: 15px;
+}
+
+.center {
+    display: flex;
+    gap: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.subscribe button {
+    padding: 10px;
+    color: #064328;
+    background-color: white;
+    border-radius: 15px;
+    width: 150px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    opacity: 0.8;
+}
+
+.subscribe button:hover {
+    opacity: 1;
+}
+
+.subscribe input {
+    outline: none;
+    border: none;
+    border-bottom: white 1px solid;
+    width: 300px;
+    color: white;
+}
+
+.subscribe input::placeholder {
+    color: white;
+}
+
+.subscribe input[type="text"] {
+    padding-left: 6%;
+}
+
+.subscribe .i-icon {
+    position: absolute;
+    top: 38%;
+    left: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #064328 5px solid;
+    background-color: transparent;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #064328 5px solid;
+}
+
+.reach{
+    display: flex;
+    flex-direction: column;
+}
+
+.reach > button {
+    color:white;
+    background-color: #064328;
+    padding: 10px;
+    margin: 5px;
+    opacity: 0.8;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.reach > input{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    opacity: 0.5;
+}
+
+.reach > input:focus{
+    opacity: 1;
+}
+
+.reach > input:hover{
+    opacity: 1;
+} */

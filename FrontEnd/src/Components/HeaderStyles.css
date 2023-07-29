@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #222222;
+  color: white;
+  width: 100%;
+  height: 80px;
+  font-family: ubuntu, monospace;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links > li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nameLogo {
+  position: relative;
+}
+
+.nameLogo > a {
+  font-size: 70px;
+}
+
+.nameLogo a:hover::after {
+  content: "";
+  width: 38%;
+  height: 5px;
+  background: #064328;
+  position: absolute;
+  left: 80px;
+  bottom: 10px;
+}
+
+#links li {
+  position: relative;
+}
+
+#links li a {
+  padding: 10px;
+}
+
+#links li a:hover {
+  color: #064328;
+  transition: 0.3s ease-in-out;
+}
+
+#links li a:hover::after,
+#links li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #064328;
+  position: absolute;
+  bottom: -4px;
+  left: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 100px;
+}
+
+.nameLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* .nameLogo > h2 {
+  font-size: 70px;
+  color: #064328;
+} */
+
+.nameLogo .after {
+  font-size: 70px;
+}
+
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  #links {
+    background-color: rgba(49, 49, 49, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 120px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    padding: 60px 0 0 10px;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+  }
+
+  #links li {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #links li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(49, 49, 49, 1);
+  }
+
+  #mobile {
+    display: block;
+    padding: 50px;
+  }
+
+  #links.active {
+    right: 0px;
+  }
+
+  #links li {
+    margin-bottom: 25px;
+  }
+}

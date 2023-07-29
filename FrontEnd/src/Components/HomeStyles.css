@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    margin-top: 50px;
+    background-image: linear-gradient(0deg, rgba(0, 50, 0, 0.3), rgba(0, 50, 0, 0.6)), url('../Images/bg.png');
+    height: 450px;
+    background-size: cover;
+    position: relative;
+}
+
+.home p{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 500px;
+    color: white;
+}
+
+.home-intro div {
+    font-size: 50px;
+    border-bottom: #064328 5px solid;
+}
+
+.home-intro span{
+    font-size: 20px;
+    line-height: 2;
+}
